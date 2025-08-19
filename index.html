@@ -182,8 +182,68 @@
         ];
         const eixos = [ { id: 1, nome: "Desenvolvimento, sustentabilidade e inclusão" }, { id: 2, nome: "Desenvolvimento produtivo e regional" }, { id: 3, nome: "Gestão estratégica e regulação" }, { id: 4, nome: "Desenvolvimento socioeconômico no Brasil" }, { id: 5, nome: "Desigualdades e dinâmicas socioeconômicas" }, ];
         const cronogramaCompleto = [ { semana: 1, dia: 'Segunda', data: '2025-08-11', eixo: 1, topico: "Teorias do desenvolvimento econômico" }, { semana: 1, dia: 'Terça', data: '2025-08-12', eixo: 2, topico: "Teorias de localização e desenvolvimento regional" }, { semana: 1, dia: 'Quarta', data: '2025-08-13', eixo: 3, topico: "Planejamento e gestão estratégica" }, { semana: 1, dia: 'Quinta', data: '2025-08-14', eixo: 4, topico: "Liberalismo econômico e nacional-desenvolvimentismo" }, { semana: 1, dia: 'Sexta', data: '2025-08-15', eixo: 5, topico: "Dinâmica e estrutura demográfica" }, { semana: 1, dia: 'Sábado', data: '2025-08-16', eixo: 'todos', topico: "Simulado completo (50 questões)" }, { semana: 2, dia: 'Segunda', data: '2025-08-18', eixo: 1, topico: "Teorias da CEPAL e Celso Furtado" }, { semana: 2, dia: 'Terça', data: '2025-08-19', eixo: 2, topico: "Nova Geografia Econômica" }, { semana: 2, dia: 'Quarta', data: '2025-08-20', eixo: 3, topico: "Análise de cenários e gestão de riscos" }, { semana: 2, dia: 'Quinta', data: '2025-08-21', eixo: 4, topico: "Era Vargas e industrialização" }, { semana: 2, dia: 'Sexta', data: '2025-08-22', eixo: 5, topico: "Desigualdade de renda e riqueza" }, { semana: 2, dia: 'Domingo', data: '2025-08-24', eixo: 'todos', topico: "Simulado + revisão" }, { semana: 3, dia: 'Segunda', data: '2025-08-25', eixo: 1, topico: "Modelos de substituição de importações" }, { semana: 3, dia: 'Terça', data: '2025-08-26', eixo: 2, topico: "Indústria e sistemas de inovação" }, { semana: 3, dia: 'Quarta', data: '2025-08-27', eixo: 3, topico: "Governança e arranjos federativos" }, { semana: 3, dia: 'Quinta', data: '2025-08-28', eixo: 4, topico: "Ditadura militar e desenvolvimento" }, { semana: 3, dia: 'Sexta', data: '2025-08-29', eixo: 5, topico: "Sistema de proteção social pós-1988" }, { semana: 3, dia: 'Sábado', data: '2025-08-30', eixo: 'todos', topico: "Simulado intensivo (tempo reduzido)" }, { semana: 4, dia: 'Segunda', data: '2025-09-01', eixo: 1, topico: "Desenvolvimento sustentável e ODS" }, { semana: 4, dia: 'Terça', data: '2025-09-02', eixo: 2, topico: "Políticas de desenvolvimento regional século XXI" }, { semana: 4, dia: 'Quarta', data: '2025-09-03', eixo: 3, topico: "Falhas de mercado e regulação" }, { semana: 4, dia: 'Quinta', data: '2025-09-04', eixo: 4, topico: "Crises 2015-2016 e COVID-19" }, { semana: 4, dia: 'Sexta', data: '2025-09-05', eixo: 5, topico: "Mercado de trabalho contemporâneo" }, { semana: 4, dia: 'Domingo', data: '2025-09-07', eixo: 'todos', topico: "Simulado final preparatório" },];
-        const bibliografia = [ { autor: "Celso Furtado", obra: "Formação Econômica do Brasil", resumo: "Análise clássica sobre as raízes históricas do subdesenvolvimento brasileiro, focando na economia primário-exportadora." }, { autor: "Bresser-Pereira", obra: "Desenvolvimento e Crise no Brasil", resumo: "Examina os ciclos de desenvolvimento e as crises econômicas brasileiras, com foco no papel do Estado e da industrialização." }, { autor: "José Eli da Veiga", obra: "Desenvolvimento Sustentável", resumo: "Introdução ao conceito de desenvolvimento sustentável e seus desafios, criticando a visão puramente economicista." }, { autor: "Marcio Pochmann", obra: "Nova Classe Média?", resumo: "Debate sobre as transformações sociais no Brasil nos anos 2000 e a real consistência da emergência de uma 'nova classe média'." }, { autor: "Ricardo Bielschowsky", obra: "Pensamento Econômico Brasileiro", resumo: "Coletânea essencial que mapeia as diferentes correntes do pensamento econômico no Brasil, do liberalismo ao desenvolvimentismo." },];
+        const bibliografia = [ 
+            { 
+                id: 'furtado-2005',
+                autor: "Celso Furtado", 
+                obra: "Formação Econômica do Brasil", 
+                resumo: "Análise clássica sobre as raízes históricas do subdesenvolvimento brasileiro, focando na economia primário-exportadora.",
+                eixos: [1, 2, 4, 5],
+                conceitos: ["Subdesenvolvimento", "Centro-periferia", "Industrialização por Substituição de Importações (ISI)", "Economia Colonial", "Ciclo do Açúcar", "Ciclo do Ouro", "Economia Cafeeira"]
+            },
+            { autor: "Bresser-Pereira", obra: "Desenvolvimento e Crise no Brasil", resumo: "Examina os ciclos de desenvolvimento e as crises econômicas brasileiras, com foco no papel do Estado e da industrialização." }, 
+            { autor: "José Eli da Veiga", obra: "Desenvolvimento Sustentável", resumo: "Introdução ao conceito de desenvolvimento sustentável e seus desafios, criticando a visão puramente economicista." }, 
+            { autor: "Marcio Pochmann", obra: "Nova Classe Média?", resumo: "Debate sobre as transformações sociais no Brasil nos anos 2000 e a real consistência da emergência de uma 'nova classe média'." }, 
+            { autor: "Ricardo Bielschowsky", obra: "Pensamento Econômico Brasileiro", resumo: "Coletânea essencial que mapeia as diferentes correntes do pensamento econômico no Brasil, do liberalismo ao desenvolvimentismo." },
+        ];
         const fontes = [ { nome: "Ministério do Desenvolvimento Regional", link: "https://www.gov.br/mdr/pt-br" }, { nome: "Relatórios do IPEA", link: "https://www.ipea.gov.br/portal/" }, { nome: "Publicações da CEPAL", link: "https://www.cepal.org/pt-br" }, { nome: "Dados do IBGE", link: "https://www.ibge.gov.br/" }, { nome: "Agências Reguladoras (Consulta)", link: "https://www.planalto.gov.br/ccivil_03/consulta_publica/agencias_reguladoras.htm" },];
+        const documentosAnalisados = [
+            {
+                id: 'guia-estudo-01',
+                titulo: "Guia de Estudo: Economia Brasileira - Primeiros Séculos até a Crise da Dívida",
+                autor: "Material de Apoio",
+                data: "2024-08-19",
+                relevancia: {
+                    eixos: [1, 4, 5],
+                    conceitos: ["Economia Colonial", "Ciclo do Açúcar", "Crise do Encilhamento", "Convênio de Taubaté", "Crise de 1929", "Governo Vargas", "Governo Dutra", "Milagre Econômico", "Crise da Dívida"]
+                },
+                conteudo: {
+                    resumo: "Este guia aborda a evolução da economia brasileira desde seus pilares coloniais (latifúndio, monocultura, trabalho escravo) até as grandes crises e planos de desenvolvimento do século XX, como o Encilhamento, o Convênio de Taubaté, a crise de 1929, o PSI, o Milagre Econômico e a Crise da Dívida Externa.",
+                    perguntas: [
+                        { q: "Explique a diferença fundamental entre 'Economia Brasileira' e 'História da Economia do Brasil' conforme o material.", a: "Economia Brasileira foca na relação entre variáveis econômicas (PIB, inflação), enquanto a História da Economia do Brasil se concentra mais nos líderes e eventos históricos." },
+                        { q: "Quais foram os três principais elementos estruturais da economia colonial brasileira?", a: "Os três elementos foram monocultura, trabalho escravo e latifúndio (grandes propriedades)." },
+                        { q: "Qual foi o principal fator para o declínio do ciclo do açúcar no Brasil?", a: "Foi a quebra do monopólio português devido à apropriação do conhecimento de produção pelos holandeses, que geraram concorrência nas Antilhas." },
+                    ],
+                    glossario: [
+                        { termo: "Crise do Encilhamento", definicao: "Bolha especulativa e crise econômica no Brasil no final do século XIX, resultante da expansão desenfreada de crédito e emissão monetária." },
+                        { termo: "Convênio de Taubaté (1906)", definicao: "Acordo entre estados produtores de café e o governo federal para intervir no mercado do café, comprando excedentes e controlando preços." },
+                        { termo: "Industrialização por Substituição de Importações (ISI)", definicao: "Estratégia de desenvolvimento econômico que visa a produção interna de bens que antes eram importados." },
+                    ]
+                }
+            },
+            {
+                id: 'nivelamento-financas-01',
+                titulo: "Nivelamento em Finanças e Fluxo de Caixa",
+                autor: "Material de Apoio (Prof. Paulo Portinho)",
+                data: "2024-08-20",
+                relevancia: {
+                    eixos: [3],
+                    conceitos: ["Fluxo de Caixa", "VPL", "TIR", "Valuation", "Contabilidade", "Balanço Patrimonial", "DRE", "Custo de Oportunidade", "Taxa Livre de Risco"]
+                },
+                conteudo: {
+                    resumo: "Este documento oferece um nivelamento essencial em finanças privadas, abordando conceitos cruciais para a avaliação de ativos e projetos de investimento. Cobre desde taxas de juros e regimes de capitalização até a análise de demonstrativos contábeis (Balanço Patrimonial, DRE) e as principais ferramentas de valuation, como Valor Presente Líquido (VPL) e Taxa Interna de Retorno (TIR).",
+                    perguntas: [
+                        { q: "Qual a principal diferença entre a Taxa Interna de Retorno (TIR) e o Valor Presente Líquido (VPL)?", a: "O VPL calcula o excedente monetário de um projeto descontado por uma taxa mínima de atratividade (TMA), enquanto a TIR é a taxa que zera o VPL. O VPL é considerado superior, pois não pressupõe o reinvestimento dos fluxos à própria TIR." },
+                        { q: "O que é o EBITDA (ou LAJIDA) e por que ele é importante na análise financeira?", a: "EBITDA é o Lucro antes dos Juros, Impostos, Depreciação e Amortização. Ele representa a geração de caixa operacional da empresa, sendo um indicador importante para avaliar a performance do negócio independentemente de sua estrutura de capital e política de impostos." },
+                    ],
+                    glossario: [
+                        { termo: "Valor Presente Líquido (VPL)", definicao: "Soma dos fluxos de caixa futuros de um projeto, descontados a uma taxa de custo de capital, subtraindo o investimento inicial. Se positivo, o projeto cria valor." },
+                        { termo: "Taxa Interna de Retorno (TIR)", definicao: "A taxa de desconto que torna o VPL de um projeto igual a zero. Representa a rentabilidade intrínseca do investimento." },
+                        { termo: "Custo de Oportunidade", definicao: "O retorno do melhor investimento alternativo que se abre mão ao escolher um determinado projeto." },
+                    ]
+                }
+            }
+        ];
 
         // --- LÓGICA DO APLICATIVO ---
         const getTodayString = () => { const today = new Date(); today.setHours(0, 0, 0, 0); return today.toISOString().split('T')[0]; }
@@ -626,7 +686,62 @@
             const hoje = getTodayString();
             return ( <div className="bg-white p-6 rounded-xl shadow-sm"><h2 className="text-2xl font-bold text-slate-800 mb-4">Cronograma de Estudos</h2><div className="overflow-x-auto"><table className="w-full text-sm text-left text-slate-500"><thead className="text-xs text-slate-700 uppercase bg-slate-50"><tr><th scope="col" className="px-6 py-3">Semana</th><th scope="col" className="px-6 py-3">Dia</th><th scope="col" className="px-6 py-3">Data</th><th scope="col" className="px-6 py-3">Tópico Central</th></tr></thead><tbody>{cronogramaCompleto.map((item, index) => (<tr key={index} className={`border-b border-slate-200 ${item.data === hoje ? 'bg-indigo-100' : 'bg-white'}`}><td className="px-6 py-4 font-semibold text-slate-900">{item.semana}</td><td className="px-6 py-4">{item.dia}</td><td className="px-6 py-4">{new Date(item.data + 'T03:00:00Z').toLocaleDateString('pt-BR')}</td><td className="px-6 py-4">{item.topico}</td></tr>))}</tbody></table></div></div> ) 
         }
-        function Biblioteca() { return ( <div className="space-y-8"><div className="bg-white p-6 rounded-xl shadow-sm"><h2 className="text-2xl font-bold text-slate-800 mb-4">Bibliografia Essencial</h2><div className="space-y-4">{bibliografia.map((item, index) => (<div key={index} className="border-l-4 border-indigo-500 pl-4"><h3 className="font-bold text-slate-900">{item.obra}</h3><p className="text-sm font-medium text-slate-600">Autor: {item.autor}</p><p className="mt-1 text-slate-700">{item.resumo}</p></div>))}</div></div><div className="bg-white p-6 rounded-xl shadow-sm"><h2 className="text-2xl font-bold text-slate-800 mb-4">Fontes de Atualização</h2><ul className="list-disc list-inside space-y-2 text-slate-700">{fontes.map((item, index) => (<li key={index}><a href={item.link} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{item.nome}</a></li>))}</ul></div></div> ) }
+        function Biblioteca() { 
+            const [activeDoc, setActiveDoc] = useState(null);
+
+            return ( 
+                <div className="space-y-8">
+                    <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <h2 className="text-2xl font-bold text-slate-800 mb-4">Bibliografia Essencial</h2>
+                        <div className="space-y-4">{bibliografia.map((item, index) => (<div key={index} className="border-l-4 border-indigo-500 pl-4"><h3 className="font-bold text-slate-900">{item.obra}</h3><p className="text-sm font-medium text-slate-600">Autor: {item.autor}</p><p className="mt-1 text-slate-700">{item.resumo}</p></div>))}</div>
+                    </div>
+                    <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <h2 className="text-2xl font-bold text-slate-800 mb-4">Documentos Analisados</h2>
+                        {documentosAnalisados.map((doc, index) => (
+                            <div key={doc.id} className="border-b border-slate-200 py-4 last:border-b-0">
+                                <button onClick={() => setActiveDoc(activeDoc === doc.id ? null : doc.id)} className="w-full text-left">
+                                    <div className="flex justify-between items-center">
+                                        <h3 className="font-bold text-lg text-slate-900">{doc.titulo}</h3>
+                                        <span className="text-indigo-600">{activeDoc === doc.id ? 'Ocultar' : 'Expandir'}</span>
+                                    </div>
+                                    <p className="text-sm font-medium text-slate-600">Autor: {doc.autor}</p>
+                                </button>
+                                {activeDoc === doc.id && (
+                                    <div className="mt-4 space-y-4">
+                                        <div>
+                                            <h4 className="font-semibold text-slate-800">Relevância Temática:</h4>
+                                            <div className="flex flex-wrap gap-2 mt-2">
+                                                {doc.relevancia.eixos.map(eixoId => <span key={eixoId} className="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Eixo {eixoId}</span>)}
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-slate-800">Resumo:</h4>
+                                            <p className="text-slate-700 text-sm">{doc.conteudo.resumo}</p>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-slate-800">Perguntas Chave:</h4>
+                                            <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 mt-2">
+                                                {doc.conteudo.perguntas.map((p, i) => <li key={i}><strong>{p.q}</strong> {p.a}</li>)}
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-slate-800">Glossário:</h4>
+                                             <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 mt-2">
+                                                {doc.conteudo.glossario.map((g, i) => <li key={i}><strong>{g.termo}:</strong> {g.definicao}</li>)}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                    <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <h2 className="text-2xl font-bold text-slate-800 mb-4">Fontes de Atualização</h2>
+                        <ul className="list-disc list-inside space-y-2 text-slate-700">{fontes.map((item, index) => (<li key={index}><a href={item.link} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{item.nome}</a></li>))}</ul>
+                    </div>
+                </div> 
+            ) 
+        }
 
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
